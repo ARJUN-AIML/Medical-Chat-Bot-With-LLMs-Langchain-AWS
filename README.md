@@ -1,4 +1,4 @@
-# Medical Chatbot with LLMs using LangChain & AWS
+# Medical Chatbot with LLMs using LangChain & HuggingFace
 
 An end-to-end AI-powered medical chatbot that provides intelligent responses to user queries based on medical documents using Large Language Models (LLMs), vector embeddings, and semantic search.
 
@@ -35,7 +35,7 @@ The system uses:
 - **Hugging Face** → Embedding Models
 - **Pinecone** → Vector Database
 - **Flask** → Backend
-- **AWS** → Deployment
+- **HuggingFace** → Deployment
 
 ---
 
