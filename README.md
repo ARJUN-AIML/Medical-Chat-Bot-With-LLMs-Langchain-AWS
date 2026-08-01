@@ -1,47 +1,43 @@
-# Medical Chatbot with LLMs using LangChain & HuggingFace
+# Medical Chatbot using LangChain & Hugging Face
 
-An end-to-end AI-powered medical chatbot that provides intelligent responses to user queries based on medical documents using Large Language Models (LLMs), vector embeddings, and semantic search.
-
----
-
-## Project Overview
-
-This project is designed to build a medical assistant chatbot capable of answering questions from medical documents such as books, reports, and healthcare PDFs.
-
-The system uses:
-- Document ingestion
-- Text chunking
-- Embedding generation
-- Vector similarity search
-- LLM-powered response generation
+A medical question-answering chatbot that retrieves relevant information from medical documents and generates context-aware responses using Large Language Models (LLMs), semantic search, and vector embeddings.
 
 ---
 
-## Features
+# Overview
 
-✅ Upload and process medical PDFs  
-✅ Semantic search for relevant medical context  
-✅ Context-aware medical question answering  
-✅ LLM-powered chatbot responses  
-✅ Scalable cloud deployment  
+This project enables users to ask questions about medical information contained in documents such as textbooks, research papers, and healthcare PDFs.
+
+Instead of relying solely on a language model, the system retrieves the most relevant content from uploaded documents before generating an answer, improving accuracy and relevance.
 
 ---
 
-##  Tech Stack
+# Features
+
+- 📄 Process medical PDF documents
+- 🔍 Semantic document retrieval
+- 💬 Context-aware question answering
+- 🧠 LLM-powered responses
+- ⚡ Fast vector search using Pinecone
+- ☁️ Ready for cloud deployment
+
+---
+
+# Tech Stack
 
 - **Python**
-- **OpenAI / Cohere** → Large Language Models
-- **LangChain** → LLM Orchestration
-- **Hugging Face** → Embedding Models
-- **Pinecone** → Vector Database
-- **Flask** → Backend
-- **HuggingFace** → Deployment
+- **LangChain**
+- **OpenAI / Cohere** (LLMs)
+- **Hugging Face** (Embeddings)
+- **Pinecone** (Vector Database)
+- **Flask**
+- **Hugging Face Spaces** (Deployment)
 
 ---
 
-## Project Structure
+# Project Structure
 
-```bash
+```text
 Medical-Chat-Bot-With-LLMs-Langchain-AWS/
 │
 ├── src/
@@ -61,34 +57,49 @@ Medical-Chat-Bot-With-LLMs-Langchain-AWS/
 
 ---
 
-## Installation
+# How It Works
 
-### Clone Repository
+1. Upload medical PDF documents.
+2. Extract and split text into manageable chunks.
+3. Generate vector embeddings using Hugging Face models.
+4. Store embeddings in Pinecone.
+5. Retrieve the most relevant document sections based on the user's query.
+6. Generate an answer using an LLM with the retrieved context.
+
+---
+
+# Installation
+
+### Clone the Repository
+
 ```bash
 git clone https://github.com/ARJUN-AIML/Medical-Chat-Bot-With-LLMs-Langchain-AWS.git
 ```
 
-### Move to Project Folder
+### Navigate to the Project
+
 ```bash
 cd Medical-Chat-Bot-With-LLMs-Langchain-AWS
 ```
 
-### Create Virtual Environment
+### Create a Virtual Environment
+
 ```bash
 conda create -n medibot python=3.10 -y
 conda activate medibot
 ```
 
 ### Install Dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
 
 ---
 
-## Environment Variables
+# Environment Variables
 
-Create a `.env` file and add:
+Create a `.env` file in the project root.
 
 ```env
 OPENAI_API_KEY=your_api_key
@@ -97,7 +108,7 @@ PINECONE_API_KEY=your_api_key
 
 ---
 
-## Run Application
+# Run the Application
 
 ```bash
 python app.py
@@ -105,30 +116,27 @@ python app.py
 
 ---
 
-## Future Improvements
+# Future Enhancements
 
-- Multi-document support
-- Better medical knowledge retrieval
-- Voice-based chatbot
-- Improved UI/UX
-- Chat history support
-
----
-
-## Contributing
-
-Contributions are welcome!  
-Feel free to fork this repository and submit pull requests.
+- Support multiple document collections
+- Conversation history
+- Voice interaction
+- Source citation for responses
+- Improved user interface
+- Authentication and user management
 
 ---
 
-## License
+# License
 
 This project is licensed under the MIT License.
 
 ---
 
-## Author
+# Author
 
-**Arjun S**  
-B.E Artificial Intelligence and Machine Learning
+**Arjun S**
+
+B.E. Artificial Intelligence and Machine Learning
+
+Saranathan College of Engineering
